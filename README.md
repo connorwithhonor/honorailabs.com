@@ -1,2 +1,0 @@
-# honorailabs.com
-HonorAILabs.com

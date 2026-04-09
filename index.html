@@ -1,1 +1,467 @@
-{"id":"/index.html","path":"/index.html","sha":"8f68b74eaefe8734f6dc92ddf07759fa7afef0d4","mime_type":"text/html","size":36644,"site_id":"a21ea35b-b04c-4215-9df7-1a258c0f24f6","deploy_id":"69bc8ef4b71e2207951f5d2c"}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="https://assets.cdn.filesafe.space/3z37W4oH1lMfraSObL1X/media/697e9404f7a8778ce3d0c151.svg">
+    
+    <!-- GLOBAL SEO / AIEO / STRATEGY -->
+    <title>Honor AI Labs | AI Systems Engineering | 10X Production Velocity Globally</title>
+    <meta name="description" content="Honor AI Labs engineers intelligent infrastructure and AEO (Answer Engine Optimization) for global high-ticket service businesses. Bridge the gap between marketing spend and AI-driven production velocity.">
+    <meta name="keywords" content="AEO, Answer Engine Optimization, AI Systems Engineering, Global AI Agency, n8n Orchestration, High Ticket Service Automation, Honor AI Labs">
+    
+    <!-- Open Graph for Social Authority -->
+    <meta property="og:title" content="Honor AI Labs | Strategic Infrastructure Engineering">
+    <meta property="og:description" content="Beyond SEO. Scale your production velocity with AEO-hardened AI systems. Built for the global service economy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://honorailabs.com">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- JSON-LD Structured Data for AI Crawlers (AIEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Honor AI Labs",
+      "description": "Strategic AI Infrastructure and Answer Engine Optimization (AEO) for high-ticket service industries worldwide.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santa Clarita",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "url": "https://honorailabs.com",
+      "telephone": "+16614001720",
+      "founder": "Connor",
+      "serviceType": ["AI Systems Engineering", "AEO Strategy", "Infrastructure Architecture"]
+    }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
+        .chart-container { position: relative; width: 100%; max-width: 600px; margin: auto; height: 300px; }
+        
+        /* Premium Aesthetics */
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(226, 232, 240, 0.5); }
+        .fade-in { animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Neural Boot Sequence (Loader) */
+        #loader { position: fixed; inset: 0; z-index: 100; background: #0c0a09; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: opacity 0.6s ease-out; }
+        .loader-photo { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #2563eb; padding: 4px; margin-bottom: 2rem; box-shadow: 0 0 40px rgba(37, 99, 235, 0.4); animation: pulse-border 2s infinite; object-fit: cover; }
+        @keyframes pulse-border { 0% { transform: scale(1); box-shadow: 0 0 20px rgba(37, 99, 235, 0.3); } 50% { transform: scale(1.05); box-shadow: 0 0 50px rgba(37, 99, 235, 0.6); } 100% { transform: scale(1); box-shadow: 0 0 20px rgba(37, 99, 235, 0.3); } }
+        .progress-bar { width: 200px; height: 2px; background: #292524; border-radius: 999px; overflow: hidden; }
+        .progress-fill { width: 0%; height: 100%; background: #2563eb; transition: width 1.5s cubic-bezier(0.65, 0, 0.35, 1); }
+        
+        .nav-link { font-size: 0.7rem; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.3s; }
+        .step-active { background-color: #eff6ff; border-left: 4px solid #2563eb; color: #1e3a8a; }
+        .step-inactive { background-color: white; border-left: 4px solid #e5e7eb; color: #4b5563; }
+        .filter-btn-active { background-color: #2563eb; color: white; border-color: #2563eb; }
+        .filter-btn-inactive { background-color: white; color: #57534e; border-color: #e5e7eb; }
+        
+        .philosophical-border { border: 1px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(to right, #2563eb, #60a5fa) border-box; }
+        .stack-card { transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); background: white; border: 1px solid #e2e8f0; padding: 1.25rem; border-radius: 1.25rem; position: relative; }
+        .stack-card:hover { transform: translateY(-5px); border-color: #2563eb; box-shadow: 0 15px 30px -10px rgba(37, 99, 235, 0.2); }
+        .aeo-gradient { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); }
+
+        @media (max-width: 640px) {
+            .chart-container { height: 250px; }
+            h1 { font-size: 3.5rem !important; line-height: 1 !important; }
+            /* Force higher min-height on mobile for GHL calendar */
+            .booking-container { min-height: 900px !important; }
+        }
+
+        .terminal-bg { background: #0c0a09; color: #a8a29e; font-family: 'Courier New', monospace; border: 1px solid #292524; }
+        .terminal-line { border-left: 2px solid #2563eb; padding-left: 1rem; margin-bottom: 0.5rem; }
+        .pain-card { background: white; border: 1px solid #e2e8f0; padding: 2rem; border-radius: 2rem; transition: all 0.3s ease; }
+        .pain-card:hover { border-color: #ef4444; }
+        .selection-blue::selection { background: #dbeafe; color: #1e40af; }
+    </style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://honorailabs.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://honorailabs.com/og-image.png"></head>
+<body class="bg-stone-50 text-stone-900 antialiased selection-blue">
+
+    <!-- NEURAL BOOT SEQUENCE (LOADER) -->
+    <div id="loader">
+        <img src="https://assets.cdn.filesafe.space/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png" alt="Connor" class="loader-photo">
+        <p class="text-[10px] font-black uppercase tracking-[0.4em] text-blue-500 mb-4">Initializing Honor Core</p>
+        <div class="progress-bar">
+            <div id="loader-progress" class="progress-fill"></div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 glass border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center cursor-pointer" onclick="router('home')">
+                    <span class="text-xl md:text-2xl font-black tracking-tighter text-stone-900 uppercase">Honor<span class="text-blue-600">AI</span>Labs</span>
+                </div>
+                
+                <div class="hidden lg:flex space-x-8">
+                    <button onclick="router('home')" class="nav-link text-stone-600 hover:text-blue-600">Architecture</button>
+                    <button onclick="scrollToSection('aeo')" class="nav-link text-stone-600 hover:text-blue-600">The AEO Pivot</button>
+                    <button onclick="scrollToSection('stack')" class="nav-link text-stone-600 hover:text-blue-600">Integrated Stack</button>
+                    <button onclick="scrollToSection('booking')" class="nav-link text-stone-600 hover:text-blue-600">Intake</button>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="hidden sm:block text-right">
+                        <p class="text-[8px] font-black text-blue-600 uppercase tracking-widest leading-none mb-1">Operational HQ</p>
+                        <a href="tel:6614001720" class="text-lg font-black text-stone-900 tracking-tighter hover:text-blue-600 transition">661.400.1720</a>
+                    </div>
+                    <button onclick="scrollToSection('booking')" class="bg-blue-600 text-white px-5 py-2.5 md:px-7 md:py-3 rounded-xl font-black hover:bg-blue-700 transition shadow-lg text-[10px] md:text-xs uppercase tracking-widest">Book Audit</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="app-container">
+        
+        <!-- ==================== HOME VIEW ==================== -->
+        <div id="view-home" class="fade-in">
+            
+            <!-- HERO -->
+            <header class="bg-white border-b border-stone-100 pt-16 pb-24 md:pt-28 md:pb-36 text-center">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="inline-flex items-center gap-2 py-2 px-5 rounded-full bg-blue-50 text-blue-600 text-[9px] md:text-[10px] font-black uppercase tracking-widest mb-8 border border-blue-100">
+                        Operational Velocity Systems Engineering
+                    </div>
+                    <h1 class="text-5xl md:text-[8rem] xl:text-[9.5rem] font-black text-stone-900 mb-8 md:mb-12 tracking-tighter leading-[0.8] md:leading-[0.75]">
+                        Infinite <br><span class="text-blue-600">Scale.</span>
+                    </h1>
+                    <p class="text-lg md:text-2xl text-stone-500 max-w-3xl mx-auto mb-10 md:mb-16 leading-relaxed font-medium">
+                        Honor AI Labs engineers the intelligent infrastructure that turns high-ticket service businesses into 
+                        automated giants. We solve for friction, ensuring your humans are <strong>Honoured</strong>, not replaced.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 md:gap-6">
+                        <button onclick="scrollToSection('booking')" class="px-10 py-4 md:px-12 md:py-5 bg-stone-900 text-white rounded-2xl font-black hover:bg-stone-800 transition shadow-2xl text-[10px] md:text-xs uppercase tracking-widest">Begin Integration</button>
+                        <button onclick="scrollToSection('aeo')" class="px-10 py-4 md:px-12 md:py-5 bg-white text-blue-600 border-2 border-blue-600 rounded-2xl font-black hover:bg-blue-50 transition text-[10px] md:text-xs uppercase tracking-widest">The AEO Pivot</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 space-y-32 md:space-y-48">
+                
+                <!-- THE COST OF FRICTION -->
+                <section id="friction" class="scroll-mt-24">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-6xl font-black text-stone-900 mb-4 tracking-tighter uppercase leading-none">The Cost of Inaction</h2>
+                        <p class="text-stone-500 font-medium max-w-2xl mx-auto italic text-sm md:text-base">Every high-ticket business has a "Leakage Profile." We plug the gaps that drain your bottom line.</p>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                        <article class="pain-card">
+                            <span class="pain-icon">📞</span>
+                            <h3 class="text-lg md:text-xl font-black mb-3 uppercase tracking-tighter">Missed Opportunities</h3>
+                            <p class="text-stone-500 text-xs md:text-sm mb-6">62% of calls go unanswered. In $20k+ trades, a missed call is a contract handed to your competitor. This is systemic revenue suicide.</p>
+                            <div class="bg-red-50 text-red-700 font-bold p-3 rounded text-[10px] uppercase tracking-widest text-center">Solution: 0.4s Capture</div>
+                        </article>
+                        <article class="pain-card">
+                            <span class="pain-icon">💬</span>
+                            <h3 class="text-lg md:text-xl font-black mb-3 uppercase tracking-tighter">Social Ghosting</h3>
+                            <p class="text-stone-500 text-xs md:text-sm mb-6">Leads on IG or FB expect instant interaction. Wait until morning, and they've already moved on to the next firm.</p>
+                            <div class="bg-red-50 text-red-700 font-bold p-3 rounded text-[10px] uppercase tracking-widest text-center">Solution: Omni-Channel AI</div>
+                        </article>
+                        <article class="pain-card">
+                            <span class="pain-icon">⭐</span>
+                            <h3 class="text-lg md:text-xl font-black mb-3 uppercase tracking-tighter">Entity Authority</h3>
+                            <p class="text-stone-500 text-xs md:text-sm mb-6">AI search engines crawl your reviews. Missing a 5-star review kills your citations. We automate the loop.</p>
+                            <div class="bg-red-50 text-red-700 font-bold p-3 rounded text-[10px] uppercase tracking-widest text-center">Solution: AI Sentiment Loop</div>
+                        </article>
+                        <article class="pain-card">
+                            <span class="pain-icon">🕸️</span>
+                            <h3 class="text-lg md:text-xl font-black mb-3 uppercase tracking-tighter">Database Decay</h3>
+                            <p class="text-stone-500 text-xs md:text-sm mb-6">Relationship decay kills LTV. Without nurture, clients feel like a transaction. We engineer systems that care for them automatically.</p>
+                            <div class="bg-red-50 text-red-700 font-bold p-3 rounded text-[10px] uppercase tracking-widest text-center">Solution: Lifetime Nurture</div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- THE AEO PIVOT -->
+                <section id="aeo" class="scroll-mt-24 aeo-gradient rounded-[3rem] p-10 md:p-24 text-white shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-20 -top-20 w-96 h-96 bg-blue-500 rounded-full blur-[120px] opacity-20"></div>
+                    <div class="grid lg:grid-cols-2 gap-16 items-center relative z-10">
+                        <div>
+                            <span class="inline-block py-1 px-4 rounded-full border border-blue-400 text-blue-200 text-[10px] font-black uppercase tracking-widest mb-6">Strategic Shift: Agentic Era</span>
+                            <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter uppercase leading-none">SEO is relevant. <br><span class="text-blue-400 underline decoration-blue-500 decoration-4 underline-offset-8">AEO is Mandatory.</span></h2>
+                            <p class="text-blue-100 text-lg md:text-xl mb-10 leading-relaxed font-medium">
+                                Traditional SEO gets you on the list. <strong>Answer Engine Optimization (AEO)</strong> gets you recommended. If your business isn't dialed into the generative layer, you are invisible to the modern consumer.
+                            </p>
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center flex-shrink-0 text-xl shadow-lg">🤖</div>
+                                    <div>
+                                        <h4 class="font-black text-lg uppercase tracking-tight">Entity Mapping</h4>
+                                        <p class="text-blue-200 text-sm">We engineer your digital entity so AI models recognize you as the high-authority choice.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 md:p-12">
+                            <div class="space-y-8">
+                                <div class="relative">
+                                    <div class="flex justify-between text-[10px] font-bold uppercase mb-2"><span>Legacy Search (SEO)</span> <span>Links & Clicks</span></div>
+                                    <div class="w-full h-3 bg-white/10 rounded-full overflow-hidden"><div class="w-full h-full bg-blue-800"></div></div>
+                                </div>
+                                <div class="relative">
+                                    <div class="flex justify-between text-[10px] font-bold uppercase mb-2"><span>Answer Engines (AEO)</span> <span class="text-blue-400">Source Recognition</span></div>
+                                    <div class="w-full h-3 bg-white/10 rounded-full overflow-hidden"><div class="w-1/2 h-full bg-blue-400"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INTEGRATED STACK -->
+                <section id="stack" class="scroll-mt-24">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-6xl font-black text-stone-900 mb-4 tracking-tighter uppercase leading-none">Integrated Architecture</h2>
+                        <p class="text-stone-500 font-medium text-sm md:text-base">Strategic API-level engineering utilizing a hardened, world-class stack.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Orchestration</h4><p class="font-bold text-base md:text-lg">n8n / Zapier</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Reasoning</h4><p class="font-bold text-base md:text-lg">Claude 3.5 / VEO</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">CRM Backbone</h4><p class="font-bold text-base md:text-lg">GoHighLevel Core</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Voice Production</h4><p class="font-bold text-base md:text-lg">ElevenLabs API</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Dev Environments</h4><p class="font-bold text-base md:text-lg">VS Code / GitHub</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Reasoning Nodes</h4><p class="font-bold text-base md:text-lg">Gemini / Grok-3</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Signal Integrity</h4><p class="font-bold text-base md:text-lg">Pixel / CAPI</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Connectivity</h4><p class="font-bold text-base md:text-lg">MCP Protocols</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Deployment</h4><p class="font-bold text-base md:text-lg">Netlify / Replit</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Agentic Engine</h4><p class="font-bold text-base md:text-lg">Claude Code</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Workflow Lab</h4><p class="font-bold text-base md:text-lg">Make / n8n Cloud</p></div>
+                        <div class="stack-card"><h4 class="font-black text-blue-600 text-[9px] uppercase mb-2">Intelligence</h4><p class="font-bold text-base md:text-lg">ChatGPT-4o / O1</p></div>
+                    </div>
+                </section>
+
+                <!-- TERMINAL -->
+                <section id="terminal" class="scroll-mt-24">
+                    <div class="terminal-bg rounded-[2.5rem] p-6 md:p-12 shadow-2xl overflow-hidden relative border-4 border-stone-800">
+                        <div class="flex items-center gap-2 mb-8 border-b border-stone-800 pb-4 font-sans">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-orange-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            <span class="ml-4 text-[9px] md:text-[10px] uppercase font-bold text-stone-600 tracking-widest">honor-ai-diagnostic.sh</span>
+                        </div>
+                        <div class="space-y-4 text-xs md:text-base leading-relaxed">
+                            <div class="terminal-line"><span class="text-blue-500 font-bold">honor@labs:~$</span> ./analyze-friction --target="IndustryStandard"</div>
+                            <div class="text-stone-500">[INFO] Mapping GHL Webhooks & n8n Logic Paths...</div>
+                            <div class="text-stone-500">[ERROR] Response Latency: 42.5 Minutes. <span class="text-red-500 font-bold">92% Lead Decay Risk.</span></div>
+                            <div class="text-stone-500">[ACTION] Injecting Claude Code logic node... <span class="text-green-500">STABLE (0.3s)</span></div>
+                            <div class="text-blue-400 font-black">>> PRODUCTION STATUS: 10X MULTIPLIER ENABLED</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ROI Math -->
+                <section id="math" class="scroll-mt-24 bg-stone-900 rounded-[3.5rem] p-10 md:p-24 text-white shadow-2xl overflow-hidden relative border border-stone-800">
+                    <div class="grid lg:grid-cols-2 gap-16 md:gap-20 items-center relative z-10">
+                        <div>
+                            <h2 class="text-4xl md:text-5xl font-black mb-8 tracking-tighter uppercase leading-tight">The <span class="text-blue-500">Found Money</span> Math.</h2>
+                            <p class="text-stone-400 text-sm md:text-lg mb-8 md:mb-12 font-medium leading-relaxed">Plug the leakage. For high-ticket service giants, a 4X yield on infrastructure spend is the baseline engineering standard.</p>
+                            <div class="bg-stone-800 p-6 md:p-8 rounded-3xl border border-stone-700">
+                                <div class="flex justify-between items-center mb-6">
+                                    <span class="text-[10px] font-black uppercase tracking-widest text-stone-500">Monthly Ad Budget</span>
+                                    <span id="budget-display" class="text-2xl md:text-3xl font-black text-blue-500">$2,000</span>
+                                </div>
+                                <input type="range" id="roi-slider" min="500" max="15000" step="500" value="2000" class="w-full h-2 bg-stone-700 rounded-lg appearance-none cursor-pointer accent-blue-500 mb-4">
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-[2rem] p-6 md:p-12 shadow-inner overflow-hidden">
+                            <div class="chart-container"><canvas id="roiChart"></canvas></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VERTICAL MATRIX -->
+                <section id="verticals" class="scroll-mt-24">
+                    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                        <h2 class="text-4xl md:text-5xl font-black text-stone-900 mb-4 tracking-tighter uppercase leading-none">Vertical Architectures</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <button onclick="filterIndustries('all')" id="filter-all" class="filter-btn-active px-4 md:px-6 py-2 rounded-xl text-[9px] md:text-[10px] font-black uppercase tracking-widest border transition">All</button>
+                            <button onclick="filterIndustries('trades')" id="filter-trades" class="filter-btn-inactive px-4 md:px-6 py-2 rounded-xl text-[9px] md:text-[10px] font-black uppercase tracking-widest border transition">Trades</button>
+                            <button onclick="filterIndustries('finance')" id="filter-finance" class="filter-btn-inactive px-4 md:px-6 py-2 rounded-xl text-[9px] md:text-[10px] font-black uppercase tracking-widest border transition">Finance</button>
+                            <button onclick="filterIndustries('professional')" id="filter-professional" class="filter-btn-inactive px-4 md:px-6 py-2 rounded-xl text-[9px] md:text-[10px] font-black uppercase tracking-widest border transition">Professional</button>
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" id="industry-grid"></div>
+                </section>
+
+                <!-- Strategic Intake -->
+                <section id="booking" class="scroll-mt-24">
+                    <div class="grid lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-4">
+                            <div class="sticky top-24">
+                                <h2 class="text-3xl md:text-4xl font-black text-stone-900 mb-6 tracking-tighter uppercase leading-none text-center lg:text-left">Systems Audit.</h2>
+                                <p class="text-stone-600 font-medium mb-8 text-center lg:text-left text-sm md:text-base">45-Minute Zoom Diagnostic for High-Ticket Enterprises. Lead-loss data and decision-makers only.</p>
+                                <div class="bg-blue-600 p-8 rounded-3xl text-white shadow-xl hidden lg:block">
+                                    <h4 class="font-black text-xs uppercase tracking-widest mb-4">Zoom Mandate:</h4>
+                                    <ul class="space-y-4 text-xs font-bold leading-relaxed">
+                                        <li>• High-speed connection required.</li>
+                                        <li>• Missed-call logs from last 30 days.</li>
+                                        <li>• Stable professional environment.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIX: Forced 900px min-height on booking container for mobile date-picker visibility -->
+                        <div class="lg:col-span-8 bg-white p-2 md:p-4 rounded-3xl shadow-2xl border border-stone-200 min-h-[900px] md:min-h-[950px] booking-container">
+                            <iframe src="https://site.honorelevate.com/widget/booking/x6JflBVSk3sbg4XOkI3A" style="width: 100%; border:none; min-height: 900px; md:min-height: 950px; height: 100%;" id="ghl-calendar"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- CORPORATE TERMS -->
+        <div id="view-terms" class="hidden fade-in max-w-5xl mx-auto px-6 py-24 legal-content">
+            <h1 class="font-black text-5xl md:text-8xl mb-4 uppercase tracking-tighter text-stone-900 leading-none">Terms of <br><span class="text-blue-600">Service</span></h1>
+            <div class="bg-white p-8 md:p-20 rounded-[3rem] border border-stone-200 shadow-sm">
+                <section class="legal-section">
+                    <h2>01. Nature of Augmented Infrastructure</h2>
+                    <p>Honor AI Labs (the "Company") provides bespoke systems engineering. Commissioning our services constitutes a <strong>bespoke engineering project</strong>, not a SaaS subscription.</p>
+                </section>
+                <section class="legal-section">
+                    <h2>02. AI Behavioral Indemnification</h2>
+                    <p>Honor AI Labs is not liable for conversational hallucinations or factual inaccuracies generated by AI agents.</p>
+                </section>
+            </div>
+            <button onclick="router('home')" class="mt-12 md:mt-16 text-blue-600 font-black uppercase tracking-widest text-[10px] md:text-xs">&larr; Back to Command Center</button>
+        </div>
+
+        <!-- CORPORATE PRIVACY -->
+        <div id="view-privacy" class="hidden fade-in max-w-5xl mx-auto px-6 py-24 legal-content">
+            <h1 class="font-black text-5xl md:text-8xl mb-4 uppercase tracking-tighter text-stone-900 leading-none">Privacy <br><span class="text-blue-600">Policy</span></h1>
+            <div class="bg-white p-8 md:p-20 rounded-[3rem] border border-stone-200 shadow-sm">
+                <section class="legal-section">
+                    <h2>01. Processor vs. Controller</h2>
+                    <p>Client is the Data Controller. Honor AI Labs is the Data Processor. You own your database.</p>
+                </section>
+            </div>
+            <button onclick="router('home')" class="mt-12 md:mt-16 text-blue-600 font-black uppercase tracking-widest text-[10px] md:text-xs">&larr; Back to Command Center</button>
+        </div>
+
+    </main>
+
+    <footer id="contact-footer" class="bg-stone-900 text-white py-32 md:py-48 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-6xl md:text-8xl font-black mb-12 tracking-tighter uppercase leading-none">Honor<span class="text-blue-600">AI</span>Labs</h3>
+            <div class="grid md:grid-cols-2 gap-8 md:gap-10 max-w-5xl mx-auto mb-20 md:mb-24">
+                <div class="bg-stone-800/40 p-10 md:p-14 rounded-[2.5rem] border border-stone-700 backdrop-blur-md">
+                    <p class="text-[8px] md:text-[9px] font-black text-blue-400 uppercase tracking-widest mb-4">Intake Engineering</p>
+                    <a href="mailto:info@honorailabs.com" class="text-xl md:text-2xl font-black text-white hover:text-blue-400 transition tracking-tighter uppercase">info@honorailabs.com</a>
+                </div>
+                <div class="bg-stone-800/40 p-10 md:p-14 rounded-[2.5rem] border border-stone-700 backdrop-blur-md flex flex-col items-center">
+                    <img src="https://assets.cdn.filesafe.space/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png" alt="Connor" class="w-12 h-12 rounded-full mb-4 border border-blue-600">
+                    <p class="text-[8px] md:text-[9px] font-black text-blue-400 uppercase tracking-widest mb-2">Lead Architect Line</p>
+                    <a href="tel:6614001720" class="text-xl md:text-2xl font-black text-white hover:text-blue-400 transition tracking-tighter">661.400.1720</a>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12 text-[9px] font-black text-stone-600 uppercase tracking-[0.4em] pt-16 border-t border-stone-800">
+                <button onclick="router('terms')" class="hover:text-white transition">Terms of Service</button>
+                <button onclick="router('privacy')" class="hover:text-white transition">Privacy Policy</button>
+                <span>Sovereign Infrastructure Worldwide</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function router(viewId) {
+            const views = ['view-home', 'view-terms', 'view-privacy'];
+            views.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.classList.add('hidden');
+            });
+            const target = document.getElementById(`view-${viewId}`);
+            if (target) {
+                target.classList.remove('hidden');
+                target.classList.add('fade-in');
+            }
+            window.scrollTo(0, 0);
+        }
+
+        function scrollToSection(id) {
+            router('home');
+            setTimeout(() => {
+                const el = document.getElementById(id);
+                if(el) el.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+
+        const industries = [
+            { type: ['trades', 'finance', 'professional'], icon: '🌐', title: 'Unified Service Architecture', desc: 'Industry-agnostic infrastructure to capture and re-engage leads across any service vertical.' },
+            { type: ['finance'], icon: '🏦', title: 'Mortgage Brokers', desc: 'Agile pivoting between Refi and Purchase. Automated triage during market shifts.' },
+            { type: ['trades'], icon: '🏠', title: 'Roofing', desc: 'Weather-triggered ad deployment. Capture storm leads 24/7 for field inspectors.' },
+            { type: ['trades'], icon: '❄️', title: 'HVAC & Plumbing', desc: 'Emergency response logic. AI handles scheduling while humans handle repairs.' },
+            { type: ['professional'], icon: '⚖️', title: 'Legal / Injury', desc: 'Speed-to-lead captures cases before competition. Automated initial intake.' },
+            { type: ['professional'], icon: '💉', title: 'Medical Aesthetics', desc: 'Automated booking and no-show prevention. Freeing teams from front-desk friction.' },
+            { type: ['finance'], icon: '📚', title: 'Course Creators', desc: 'Infinite scalability. Systemic ad protocols to dominate global markets.' },
+            { type: ['trades'], icon: '☀️', title: 'Solar Energy', desc: 'Database reactivation for homeowners. Resurrecting dead leads into massive revenue cycles.' },
+            { type: ['professional'], icon: '🦷', title: 'Emergency Dentistry', desc: 'High-intent search leads. AI routes calls while qualifying urgency instantly.' }
+        ];
+
+        function filterIndustries(filter) {
+            const grid = document.getElementById('industry-grid');
+            if (!grid) return;
+            grid.innerHTML = '';
+            ['all', 'trades', 'finance', 'professional'].forEach(f => {
+                const btn = document.getElementById(`filter-${f}`);
+                if (btn) btn.className = f === filter ? 'filter-btn-active px-5 py-2 rounded-xl text-[9px] md:text-[10px] font-black uppercase tracking-widest border transition' : 'filter-btn-inactive px-5 py-2 rounded-xl text-[9px] md:text-[10px] font-black uppercase tracking-widest border transition';
+            });
+            const filtered = filter === 'all' ? industries : industries.filter(i => i.type.includes(filter));
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "bg-white p-8 rounded-3xl border border-stone-200 shadow-sm hover:border-blue-600 transition-all fade-in";
+                card.innerHTML = `<div class="text-4xl mb-6">${item.icon}</div><h4 class="font-black text-base md:text-xl mb-3 tracking-tight uppercase font-sans">${item.title}</h4><p class="text-stone-500 text-xs md:text-sm leading-relaxed font-medium">${item.desc}</p>`;
+                grid.appendChild(card);
+            });
+        }
+
+        function initCharts() {
+            const ctxROIEl = document.getElementById('roiChart');
+            if(ctxROIEl) {
+                const ctxROI = ctxROIEl.getContext('2d');
+                roiChart = new Chart(ctxROI, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Ad Spend', 'Revenue'],
+                        datasets: [{ data: [2000, 8000], backgroundColor: ['#f3f4f6', '#2563eb'], borderRadius: 10, barPercentage: 0.6 }]
+                    },
+                    options: { 
+                        responsive: true, 
+                        maintainAspectRatio: false, 
+                        plugins: { legend: { display: false } }, 
+                        scales: { 
+                            y: { beginAtZero: true, grid: { color: '#f3f4f6' } }, 
+                            x: { grid: { display: false } } 
+                        } 
+                    }
+                });
+            }
+        }
+
+        const slider = document.getElementById('roi-slider');
+        if(slider) {
+            slider.addEventListener('input', (e) => {
+                const val = parseInt(e.target.value);
+                const display = document.getElementById('budget-display');
+                if(display) display.innerText = '$' + val.toLocaleString();
+                if(roiChart) { roiChart.data.datasets[0].data = [val, val * 4]; roiChart.update(); }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const progress = document.getElementById('loader-progress');
+            const loader = document.getElementById('loader');
+            
+            setTimeout(() => { progress.style.width = '100%'; }, 100);
+            setTimeout(() => { 
+                loader.style.opacity = '0';
+                setTimeout(() => { loader.style.display = 'none'; }, 600);
+            }, 1800);
+
+            filterIndustries('all');
+            initCharts();
+        });
+    </script>
+</body>
+</html>
