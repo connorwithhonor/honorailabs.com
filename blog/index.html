@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Honor AI Labs</title>
+<meta name="description" content="The Honor AI Labs blog. Insights, strategy, and updates.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+<link rel="canonical" href="https://honorailabs.com/blog/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Honor AI Labs">
+<meta property="og:url" content="https://honorailabs.com/blog/">
+<meta property="og:title" content="Blog | Honor AI Labs">
+<meta property="og:description" content="Insights, strategy, and updates from Honor AI Labs.">
+<link rel="icon" type="image/svg+xml" href="https://assets.cdn.filesafe.space/3z37W4oH1lMfraSObL1X/media/697e9404f7a8778ce3d0c151.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","@id":"https://honorailabs.com/blog/#blog","name":"Honor AI Labs Blog","url":"https://honorailabs.com/blog/","publisher":{"@type":"Organization","name":"Honor AI Labs","url":"https://honorailabs.com"},"inLanguage":"en-US"}
+</script>
+<style>
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
+        .chart-container { position: relative; width: 100%; max-width: 600px; margin: auto; height: 300px; }
+        
+        /* Premium Aesthetics */
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(226, 232, 240, 0.5); }
+        .fade-in { animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Neural Boot Sequence (Loader) */
+        #loader { position: fixed; inset: 0; z-index: 100; background: #0c0a09; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: opacity 0.6s ease-out; }
+        .loader-photo { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #2563eb; padding: 4px; margin-bottom: 2rem; box-shadow: 0 0 40px rgba(37, 99, 235, 0.4); animation: pulse-border 2s infinite; object-fit: cover; }
+        @keyframes pulse-border { 0% { transform: scale(1); box-shadow: 0 0 20px rgba(37, 99, 235, 0.3); } 50% { transform: scale(1.05); box-shadow: 0 0 50px rgba(37, 99, 235, 0.6); } 100% { transform: scale(1); box-shadow: 0 0 20px rgba(37, 99, 235, 0.3); } }
+        .progress-bar { width: 200px; height: 2px; background: #292524; border-radius: 999px; overflow: hidden; }
+        .progress-fill { width: 0%; height: 100%; background: #2563eb; transition: width 1.5s cubic-bezier(0.65, 0, 0.35, 1); }
+        
+        .nav-link { font-size: 0.7rem; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.3s; }
+        .step-active { background-color: #eff6ff; border-left: 4px solid #2563eb; color: #1e3a8a; }
+        .step-inactive { background-color: white; border-left: 4px solid #e5e7eb; color: #4b5563; }
+        .filter-btn-active { background-color: #2563eb; color: white; border-color: #2563eb; }
+        .filter-btn-inactive { background-color: white; color: #57534e; border-color: #e5e7eb; }
+        
+        .philosophical-border { border: 1px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(to right, #2563eb, #60a5fa) border-box; }
+        .stack-card { transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); background: white; border: 1px solid #e2e8f0; padding: 1.25rem; border-radius: 1.25rem; position: relative; }
+        .stack-card:hover { transform: translateY(-5px); border-color: #2563eb; box-shadow: 0 15px 30px -10px rgba(37, 99, 235, 0.2); }
+        .aeo-gradient { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); }
+
+        @media (max-width: 640px) {
+            .chart-container { height: 250px; }
+            h1 { font-size: 3.5rem !important; line-height: 1 !important; }
+            /* Force higher min-height on mobile for GHL calendar */
+            .booking-container { min-height: 900px !important; }
+        }
+
+        .terminal-bg { background: #0c0a09; color: #a8a29e; font-family: 'Courier New', monospace; border: 1px solid #292524; }
+        .terminal-line { border-left: 2px solid #2563eb; padding-left: 1rem; margin-bottom: 0.5rem; }
+        .pain-card { background: white; border: 1px solid #e2e8f0; padding: 2rem; border-radius: 2rem; transition: all 0.3s ease; }
+        .pain-card:hover { border-color: #ef4444; }
+        .selection-blue::selection { background: #dbeafe; color: #1e40af; }
+    </style>
+<style id="bm-archive-css">
+/* Theme-agnostic archive layer. Inherits the site body fonts and colors. */
+.bm-wrap{max-width:1100px;margin:0 auto;padding:130px 24px 70px;position:relative;z-index:2;}
+.bm-hero{padding:8px 0 30px;border-bottom:1px solid rgba(128,128,128,.22);margin-bottom:42px;}
+.bm-tag{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:#2563eb;margin-bottom:14px;font-weight:600;}
+.bm-hero h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.05;margin:0 0 16px;}
+.bm-hero p{opacity:.75;max-width:640px;line-height:1.65;font-size:1.05rem;}
+.bm-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;}
+.bm-card{display:block;text-decoration:none;color:inherit;border:1px solid rgba(128,128,128,.22);border-radius:10px;padding:28px;transition:transform .2s ease,border-color .2s ease;}
+.bm-card:hover{transform:translateY(-3px);border-color:#2563eb;}
+.bm-card .bm-ep{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:#2563eb;margin-bottom:10px;}
+.bm-card h2{font-size:1.3rem;line-height:1.15;margin:0 0 10px;}
+.bm-card p{opacity:.72;font-size:.92rem;line-height:1.55;margin:0;}
+.bm-card .bm-date{opacity:.55;font-size:.72rem;margin-top:14px;letter-spacing:1px;}
+.bm-empty{border:1px dashed rgba(128,128,128,.4);border-radius:12px;padding:56px 32px;text-align:center;}
+.bm-empty h2{font-size:1.6rem;margin:0 0 12px;}
+.bm-empty p{opacity:.72;max-width:520px;margin:0 auto 26px;line-height:1.65;}
+.bm-cta{display:inline-block;text-decoration:none;padding:13px 30px;border:1px solid #2563eb;color:#2563eb;border-radius:8px;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;font-weight:600;}
+.bm-cta:hover{opacity:.8;}
+@media(max-width:640px){.bm-wrap{padding:110px 18px 50px;}}
+</style>
+</head>
+<body>
+
+<nav class="sticky top-0 z-50 glass border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center cursor-pointer" onclick="router('home')">
+                    <span class="text-xl md:text-2xl font-black tracking-tighter text-stone-900 uppercase">Honor<span class="text-blue-600">AI</span>Labs</span>
+                </div>
+                
+                <div class="hidden lg:flex space-x-8">
+                    <button onclick="router('home')" class="nav-link text-stone-600 hover:text-blue-600">Architecture</button>
+                    <button onclick="scrollToSection('aeo')" class="nav-link text-stone-600 hover:text-blue-600">The AEO Pivot</button>
+                    <button onclick="scrollToSection('stack')" class="nav-link text-stone-600 hover:text-blue-600">Integrated Stack</button>
+                    <button onclick="scrollToSection('booking')" class="nav-link text-stone-600 hover:text-blue-600">Intake</button>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="hidden sm:block text-right">
+                        <p class="text-[8px] font-black text-blue-600 uppercase tracking-widest leading-none mb-1">Operational HQ</p>
+                        <a href="tel:6614001720" class="text-lg font-black text-stone-900 tracking-tighter hover:text-blue-600 transition">661.400.1720</a>
+                    </div>
+                    <button onclick="scrollToSection('booking')" class="bg-blue-600 text-white px-5 py-2.5 md:px-7 md:py-3 rounded-xl font-black hover:bg-blue-700 transition shadow-lg text-[10px] md:text-xs uppercase tracking-widest">Book Audit</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main class="bm-wrap">
+  <div class="bm-hero">
+    <div class="bm-tag">The Blog</div>
+    <h1>Honor AI Labs Blog</h1>
+    <p>Insights, strategy, and updates. New posts publish here.</p>
+  </div>
+
+  <!-- POST GRID: blogify inserts <a class="bm-card"> entries here, newest first. -->
+  <div class="bm-grid" id="bm-post-grid" style="display:none;"></div>
+
+  <!-- EMPTY STATE: remove once the first post card is added above. -->
+  <div class="bm-empty" id="bm-empty">
+    <h2>First Post Incoming</h2>
+    <p>This is the home of the Honor AI Labs blog. The first article drops soon.</p>
+    <a class="bm-cta" href="/">Back to Honor AI Labs</a>
+  </div>
+</main>
+
+<footer id="contact-footer" class="bg-stone-900 text-white py-32 md:py-48 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-6xl md:text-8xl font-black mb-12 tracking-tighter uppercase leading-none">Honor<span class="text-blue-600">AI</span>Labs</h3>
+            <div class="grid md:grid-cols-2 gap-8 md:gap-10 max-w-5xl mx-auto mb-20 md:mb-24">
+                <div class="bg-stone-800/40 p-10 md:p-14 rounded-[2.5rem] border border-stone-700 backdrop-blur-md">
+                    <p class="text-[8px] md:text-[9px] font-black text-blue-400 uppercase tracking-widest mb-4">Intake Engineering</p>
+                    <a href="mailto:info@honorailabs.com" class="text-xl md:text-2xl font-black text-white hover:text-blue-400 transition tracking-tighter uppercase">info@honorailabs.com</a>
+                </div>
+                <div class="bg-stone-800/40 p-10 md:p-14 rounded-[2.5rem] border border-stone-700 backdrop-blur-md flex flex-col items-center">
+                    <img src="https://assets.cdn.filesafe.space/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png" alt="Connor" class="w-12 h-12 rounded-full mb-4 border border-blue-600">
+                    <p class="text-[8px] md:text-[9px] font-black text-blue-400 uppercase tracking-widest mb-2">Lead Architect Line</p>
+                    <a href="tel:6614001720" class="text-xl md:text-2xl font-black text-white hover:text-blue-400 transition tracking-tighter">661.400.1720</a>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12 text-[9px] font-black text-stone-600 uppercase tracking-[0.4em] pt-16 border-t border-stone-800">
+                <button onclick="router('terms')" class="hover:text-white transition">Terms of Service</button>
+                <button onclick="router('privacy')" class="hover:text-white transition">Privacy Policy</button>
+                <span>Sovereign Infrastructure Worldwide</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
